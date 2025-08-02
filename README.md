@@ -1,4 +1,3 @@
-HEAD
 # 🏛️ Court-Data Fetcher & Mini Dashboard
 
 A Python Flask web app that allows users to search Indian court case metadata and view/download the latest judgment.
@@ -18,7 +17,7 @@ This tool helps fetch court case details using case type, number, and filing yea
 For demo purposes, this project uses **mock data** simulating scraping from the **Delhi High Court** portal:  
 🔗 [https://delhihighcourt.nic.in/](https://delhihighcourt.nic.in/)
 
-(CAPTCHA bypass or real scraping can be added later.)
+> (CAPTCHA bypass or real scraping can be added later.)
 
 ---
 
@@ -106,5 +105,4 @@ court_dashboard/judgments/sample_judgment.pdf
 This project is licensed under the MIT License.
 See the LICENSE file for details.
 
-# Court-Data-Fetcher-Mini-Dashboard
- 61f49e42f47cce98091faf805761cb18b59e3f1a
+
