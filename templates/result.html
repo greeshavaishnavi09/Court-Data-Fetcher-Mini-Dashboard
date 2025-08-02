@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Case Details</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        ul { list-style-type: none; padding: 0; }
+        li { margin-bottom: 10px; }
+        h1 { color: #333; }
+        .error { color: red; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+    {% if error %}
+        <h3 class="error">{{ error }}</h3>
+        <a href="/">← Try another search</a>
+    {% else %}
+        <h1>📄 Case Details</h1>
+        <ul>
+            <li><strong>Case Type:</strong> {{ result.case_type }}</li>
+            <li><strong>Case Number:</strong> {{ result.case_number }}</li>
+            <li><strong>Filing Year:</strong> {{ result.filing_year }}</li>
+            <li><strong>Petitioner:</strong> {{ result.petitioner }}</li>
+            <li><strong>Respondent:</strong> {{ result.respondent }}</li>
+            <li><strong>Filing Date:</strong> {{ result.filing_date }}</li>
+            <li><strong>Next Hearing:</strong> {{ result.hearing_date }}</li>
+            <li><a href="/download/{{ result.judgment_link }}">📥 Download Judgment</a></li>
+        </ul>
+        <br>
+        <a href="/">← Search Again</a>
+    {% endif %}
+
+</body>
+</html>
+
+
