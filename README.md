@@ -49,7 +49,7 @@ For demo purposes, this project uses **mock data** simulating scraping from the 
 2. Create virtual environment  
 ```bash
 python -m venv venv  
-venv\Scripts\activate  # On Windows
+.\venv\Scripts\activate # On Windows
 
 
 3. Install requirements  
@@ -58,18 +58,21 @@ pip install -r requirements.txt
 
 
 4. Run the app  
-```bash
+```bashven
 python app.py
+
 
 
 5. Open in browser
 🔗 Visit http://127.0.0.1:5000
 🔗 Visit http://127.0.0.1:5000/dashboard
 
+
 ---
 
 ## 🛠️ CAPTCHA Strategy (Mock)
 
+This app does not support real-time scraping or CAPTCHA solving.
 Since real court sites have CAPTCHA and state management, this project currently uses mock data for testing. Future upgrades may include:
 
 Remote CAPTCHA solving (2Captcha, Anti-Captcha)
@@ -98,6 +101,17 @@ court_dashboard/judgments/sample_judgment.pdf
 ## 🖼️ Sample Output
 
 ![Dashboard Screenshot](screenshots/dashboard_sample.png)
+
+---
+
+## 📽️ Demo Video
+
+Watch a complete walk-through of the project here:  
+🔗 [Loom Demo – Court Data Fetcher & Mini Dashboard](https://www.loom.com/share/b96b071055924070b0c87ff03c936ff6)
+
+Built for Think Act Rise Foundation Internship – Task 1.
+
+---
 
 
 ##  📜 License
