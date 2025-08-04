@@ -105,4 +105,19 @@ court_dashboard/judgments/sample_judgment.pdf
 This project is licensed under the MIT License.
 See the LICENSE file for details.
 
+---
+
+## ✅ Unit Testing
+
+This project includes a basic unit test to verify the response of the homepage (`/`) route using Flask’s test client.
+
+### 🔍 Test File:
+- `test_app.py`
+
+### ⚙️ How to Run the Test
+
+Make sure you have `pytest` installed (already covered if you installed `requirements.txt`). Then run:
+
+```bash
+pytest test_app.py
 
